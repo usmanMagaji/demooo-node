@@ -6,6 +6,8 @@ const express = require('express')
 // Create an Express.js instance:
 const app = express()
 
+const cors = require("cors")
+
 // config Express.js
 app.use(express.json())
 app.set('port', 3000)
@@ -88,6 +90,6 @@ res.send((result.result.n === 1) ?
 })
 })
 
-
+app.use(cors());
 const port = process.env.PORT || 3000
 app.listen(port)
