@@ -2,11 +2,7 @@
 const express = require('express')
 // const bodyParser = require('body-parser')
 
-app.use ((req,res,next) => {
-    res.setHeader('Access-Control-Allow-Origin', '*');
-    res.header("Access-Control-Allow-Headers","*");
-    next();
-})
+
 
 
 
@@ -20,6 +16,7 @@ app.use(express.json())
 app.set('port', 3000)
 app.use ((req,res,next) => {
     res.setHeader('Access-Control-Allow-Origin', '*');
+    res.header("Access-Control-Allow-Headers","*");
     next();
 })
 
