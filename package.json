@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "expree": "^0.1.6"
+    "expree": "^0.1.6",
+    "mongodb": "^4.3.1"
   }
 }
