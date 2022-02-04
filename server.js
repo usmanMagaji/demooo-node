@@ -2,6 +2,13 @@
 const express = require('express')
 // const bodyParser = require('body-parser')
 
+app.use ((req,res,next) => {
+    res.setHeader('Access-Control-Allow-Origin', '*');
+    res.header("Access-Control-Allow-Headers","*");
+    next();
+})
+
+
 
 // Create an Express.js instance:
 const app = express()
